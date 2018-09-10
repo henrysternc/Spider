@@ -8,7 +8,12 @@ import java.util.LinkedList;
 import java.util.logging.Logger;
 
 import javax.sql.DataSource;
-
+/**
+ * sqllite不支持多线程，如果强行使用多线程会导致数据库lock
+ * @author rtzt-datun
+ *
+ */
+@Deprecated
 public class SqlLitePool implements DataSource {
     private Connection conn;
     // 1.创建一个容器存放连接对象Connection

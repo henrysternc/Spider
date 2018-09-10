@@ -9,8 +9,6 @@ import org.wltea.analyzer.core.IKSegmenter;
 import org.wltea.analyzer.core.Lexeme;
 
 import com.hankcs.hanlp.HanLP;
-import com.hankcs.hanlp.dictionary.CustomDictionary;
-import com.hankcs.hanlp.seg.Segment;
 import com.hankcs.hanlp.seg.common.Term;
 import com.hankcs.hanlp.tokenizer.NLPTokenizer;
 

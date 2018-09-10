@@ -5,15 +5,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 
-import test.spider.common.ExceptionLog;
 import test.spider.common.Params;
 import test.spider.dao.JDBCTemplate;
-import test.spider.dao.SqlLiteJDBCUtils;
 import test.spider.pojo.Brand;
-import test.spider.pojo.Model;
 
 public class TestPath {
     

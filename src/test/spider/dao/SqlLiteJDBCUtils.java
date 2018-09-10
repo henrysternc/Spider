@@ -28,6 +28,7 @@ public class SqlLiteJDBCUtils {
     }
     
     
+    @SuppressWarnings("resource")
     public static Integer saveBrand(Brand brand) throws Exception{
         String sql = "insert into a_brand (id, name, image) values(null, ?, ?)";
        // SqlLitePool connectionPool = new SqlLitePool();
@@ -65,7 +66,7 @@ public class SqlLiteJDBCUtils {
         return id;
     }
     
-    
+    @Deprecated
     public static Integer saveSeries(Series series) {
         Integer id = null;
         String sql = "insert into a_series (id, name, brand_id) values(null, ?, ?)";
@@ -97,7 +98,7 @@ public class SqlLiteJDBCUtils {
         return id;
     }
     
-    
+    @Deprecated
    public static void saveModel(Model model) {
         
         SqlLitePool connectionPool = new SqlLitePool();
